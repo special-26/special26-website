@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Indie+Flower&family=Kalam:wght@400;700&family=Rubik+Scribble&display=swap');
+
+.font-indie{
+    font-family: 'Indie Flower';
+}
+.font-exo{
+    font-family: 'Exo';
+}
+.font-kalam{
+    font-family: 'Kalam';
+}
+.font-rubik{
+    font-family: 'Rubik Scribble';
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headingText{
+    -webkit-text-stroke: 0.8px #606063;
+    -webkit-text-fill-color: 0.8px #606063;
+    opacity: 0.1;
+  }
+
+.textGradient{
+    background: linear-gradient(to right, #30CFD0 0%, #c7d954 100%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: pulsate 1.5s infinite;     */
+}
+
+.gradientText{
+    background: linear-gradient(to right, #2ecc71, #3498db, #9b59b6, #f39c12);
+    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+  }
+  @keyframes animate{
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+  }
