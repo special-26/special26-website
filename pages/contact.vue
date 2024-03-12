@@ -2,7 +2,7 @@
   <div class="h-full w-full">
       <div class="w-[90vw] md:w-[80vw] mx-auto py-10 md:py-20">
           <div class="mb-10 md:mb-16">
-              <div class="text-xl text-zinc-400 ">Feel free to talk to me!</div>
+              <div class="text-xl text-zinc-400 ">Feel free to talk to us!</div>
               <div class="text-[4em] text-zinc-100 font-oxygen">Let's Work <span class="gradientText">Together</span></div>
           </div>
           

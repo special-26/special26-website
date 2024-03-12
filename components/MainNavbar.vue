@@ -1,15 +1,15 @@
 <template>
-    <nav class='bg-transparent w-full h-[62px] md:h-[100px] flex items-center '>
-      <div class='flex justify-between w-[90%] mx-auto'>
+    <!-- h-[62px] md:h-[100px] -->
+    <nav class='w-full flex items-center fixed top-0 z-10 h-[62px] md:h-[100px] rounded-3xl'>
+      <div class='flex justify-between w-[90%] mx-auto bg-zinc-800/50 backdrop-blur-xl p-2 rounded-2xl'>
         <router-link to="/" class="logo flex items-center gap-3">
-          <!-- <button class="bg-zinc-200 rounded h-8 w-8 text-sm font-bold">VB</button> -->
-          <img src="/images/logo.png" alt="vimalbharti" class="w-9">
-          <span class="text-zinc-100">VimalBharti</span>
+          <img src="/images/special-26.png" alt="special-26" class="w-12 rounded-xl">
+          <!-- <span class="text-zinc-100 uppercase">Special-26</span> -->
         </router-link>
         <div class='hidden md:flex items-center gap-2'>
-          <router-link to='/projects' class='text-zinc-500 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Projects</router-link>
-          <router-link to='/works' class='text-zinc-500 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Work</router-link>
-          <router-link to='/about' class='text-zinc-500 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>About</router-link>
+          <router-link to='/projects' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Projects</router-link>
+          <router-link to='/works' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Work</router-link>
+          <router-link to='/about' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>About</router-link>
         </div>
         <router-link to='/contact' class="flex items-center text-zinc-200">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">

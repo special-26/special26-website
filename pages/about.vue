@@ -3,9 +3,9 @@
       <div class="max-w-4xl gap-10 mx-auto">
           <div class="mb-4 text-zinc-100">
               <!-- <div class="text-[2em] font-bold"></div> -->
-              <div class="text-[4em] font-oxygen">I, Spread <span class="gradientText">Colors</span></div>
+              <div class="text-[4em] font-oxygen">We, Spread <span class="gradientText">Colors</span></div>
           </div>
-          <div class="text-zinc-300 font-oxygen">I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</div>
+          <div class="text-zinc-300 font-oxygen">We've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</div>
 
           <div class="grid grid-cols-2 gap-6 mt-16">
               <div class="rounded-xl p-12 shadow-xl bg-zinc-900 flex flex-col items-center justify-center">

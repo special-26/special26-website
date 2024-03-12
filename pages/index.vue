@@ -1,35 +1,29 @@
 <template>
-  <div class="relative">
-      <!-- glow-background -->
-      <span class="glow-background bg-cyan-400/50 blur-[150px] rounded-full w-[25vw] h-[35vh] absolute -right-[3%] top-[90vh]"></span>
-      <span class="glow-background bg-cyan-400/50 blur-[150px] rounded-full w-[25vw] h-[35vh] absolute -left-[10%] -top-[5vh]"></span>
+    <div class="relative">
+        <!-- glow-background -->
+        <span class="glow-background bg-cyan-400/50 blur-[140px] rounded-full w-[25vw] h-[35vh] absolute left-[4%] top-[15vh]"></span>
+        <span class="glow-background bg-cyan-400/50 blur-[100px] rounded-full w-[15vw] h-[25vh] absolute right-[4%] top-[50vh]"></span>
 
-      <!-- Hero-area -->
-      <section class="hero-area text-zinc-100 h-[calc(100vh-50px)] overflow-hidden max-w-7xl w-[90vw] mx-auto">
-          <div class="flex h-full">
-              <div class="w-full h-full flex flex-col items-center justify-center">
-                  <figure class="relative px-6">
-                      <img src="/images/big-logo.png" alt="vimal bharti logo" class="mb-5">
-                      <Icon name="game-icons:hummingbird" class="absolute top-0 left-0 w-12 h-12 text-white bird" />
-                  </figure>
-                  <div class="font-exo text-center uppercase mb-4">
-                      👋, I'm Vimal Bharti an independent
-                  </div>
-                  <div class="text-content font-oxygen font-bold leading-[1.1]">
-                      <div class="text-[11vw] md:text-[6vw] text-center font-rubik">Web Designer</div>
-                      <div class="text-[13vw] md:text-[7vw] text-center font-bold font-rubik">& Developer</div>
-                  </div>
-              </div>
-          </div>
-      </section>
+        <!-- Hero-area -->
+        <section class="hero-area text-zinc-100 h-screen overflow-hidden w-full flex">
+            <div class="w-full h-full flex items-center justify-center">
+                <BigText class="text-cyan-100" />
+            </div>
+            <div class="w-full h-full flex items-center justify-center">
+                <div class="px-12">
+                    <h2 class="text-[5em] font-bold capitalize">Your <br/>appearance shows your quality!</h2>
+                    <p class="text-gray-400">Change the quality of your appearance, your appearance reflects <br/> your personality, so change now!</p>
+                </div>
+            </div>
+        </section>
 
       <!-- My Project -->
       <section class="my-projects py-10 md:py-20 max-w-7xl w-[90vw] mx-auto">
           <div class="flex flex-col md:flex-row gap-10 items-center">
               <div class="w-full md:w-1/2">
                   <div class="heading relative flex items-center justify-center overflow-hidden py-10 leading-[4em]">
-                      <span class="absolute text-[3.5em] md:text-[5em] text-center font-rubik font-bold headingText">My Projects</span>
-                      <div class="text-[2em] md:text-[3.5em] font-bold text-zinc-100 font-indie relative">My Projects</div>
+                      <span class="absolute text-[3.5em] md:text-[5em] text-center font-rubik font-bold headingText">Our Projects</span>
+                      <div class="text-[2em] md:text-[3.5em] font-bold text-zinc-100 font-indie relative">Our Projects</div>
                   </div>
                   <div class="show-more flex justify-center">
                       <router-link to="projects" class="bg-zinc-900 px-8 py-3 rounded-xl text-zinc-400">All Projects</router-link>
@@ -55,8 +49,8 @@
       <!-- My Work -->
       <section class="my-works py-10 md:py-20 relative max-w-7xl w-[90vw] mx-auto">
           <div class="heading relative flex items-center justify-center overflow-hidden mb-6 md:mb-20">
-              <span class="absolute text-[4em] md:text-[8em] text-center font-bold headingText font-rubik">My Works</span>
-              <div class="text-[2.5em] md:text-[5em] font-bold text-zinc-100 font-indie">My Works</div>
+              <span class="absolute text-[4em] md:text-[8em] text-center font-bold headingText font-rubik">Our Works</span>
+              <div class="text-[2.5em] md:text-[5em] font-bold text-zinc-100 font-indie">Our Works</div>
           </div>
           <div class="">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -90,13 +84,13 @@
       <!-- Contact me -->
       <section class="contact-me py-10 md:py-20 relative max-w-7xl w-[90vw] mx-auto">
           <div class="contact-field w-full flex-center flex-col">
-              <div class="text-zinc-500 mb-3 text-2xl text-center">Feel free to talk to me!</div>
+              <div class="text-zinc-500 mb-3 text-2xl text-center">Feel free to talk to us!</div>
               <div class="text-[4em] text-center text-zinc-300">Let's Work Together</div>
               <!-- social-links -->
               <div class="flex items-center justify-center gap-10 mt-5">
                   <a href="https://github.com/VimalBharti" target="_blank" class="text-zinc-300 flex-center gap-2 group">
-                      <Icon name="bi:github" class='w-5 h-5 group-hover:scale-[2] group-hover:rotate-[360deg] transition duration-300 ease-in-out' />
-                      Github
+                      <Icon name="bi:linkdein" class='w-5 h-5 group-hover:scale-[2] group-hover:rotate-[360deg] transition duration-300 ease-in-out' />
+                      LinkdeIn
                   </a>
                   <a href="https://twitter.com/vimal_bharti" target="_blank" class="text-zinc-300 flex-center gap-2 group">
                       <Icon name="ri:twitter-x-fill" class='w-5 h-5 group-hover:scale-[2] group-hover:rotate-[360deg] transition duration-300 ease-in-out' />
@@ -104,7 +98,7 @@
                   </a>
               </div>
               <router-link to="/contact" class="relative inline-flex items-center justify-center h-64 w-64 overflow-hidden text-zinc-900 bg-white border contactBtn group mt-12">
-                  <span class="absolute w-0 h-0 transition-all duration-700 ease-out bg-zinc-900 contactBtn group-hover:w-64 group-hover:h-64"></span>
+                  <span class="absolute w-0 h-0 transition-all duration-700 ease-out bg-black contactBtn group-hover:w-64 group-hover:h-64"></span>
                   <!-- <span class="absolute inset-0 w-full h-full -mt-1 contactBtn opacity-30 bg-gradient-to-b from-transparent via-transparent to-zinc-200"></span> -->
                   <div class="flex flex-col items-center group-hover:text-white">
                       <span class="relative text-sm">click to</span>

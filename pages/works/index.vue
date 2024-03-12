@@ -6,7 +6,7 @@
             <section class="h-full">
                 <NuxtLink to="/works/real-estate-landing-page-1" class="group">
                     <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
-                        <img src="/projects/realestate-one.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer">
+                        <img src="/projects/realestate-one.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                     </figure>
                     <div class="details-box mt-6 border rounded-xl flex items-center justify-between p-10 border-zinc-700 relative">
                         <div>
@@ -30,7 +30,7 @@
             <section class="h-full">
               <NuxtLink to="/works/real-estate-landing-page-1" class="group">
                   <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
-                      <img src="/projects/realestate-two.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer">
+                      <img src="/projects/realestate-two.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                   </figure>
                   <div class="details-box mt-6 border rounded-xl flex items-center justify-between p-10 border-zinc-700 relative">
                       <div>
@@ -54,7 +54,7 @@
             <section>
               <NuxtLink to="/works/real-estate-landing-page-1" class="group">
                   <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
-                      <img src="/projects/realestate-three.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer">
+                      <img src="/projects/realestate-three.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                   </figure>
                   <div class="details-box mt-6 border rounded-xl flex items-center justify-between p-10 border-zinc-700 relative">
                       <div>
