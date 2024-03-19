@@ -1,15 +1,45 @@
 <template>
-    <!-- h-[62px] md:h-[100px] -->
-    <nav class='w-full flex items-center fixed top-0 z-10 h-[62px] md:h-[100px] rounded-3xl'>
-      <div class='flex justify-between w-[90%] mx-auto bg-zinc-800/50 backdrop-blur-xl p-2 rounded-2xl'>
-        <router-link to="/" class="logo flex items-center gap-3">
-          <img src="/images/special-26.png" alt="special-26" class="w-12 rounded-xl">
-          <!-- <span class="text-zinc-100 uppercase">Special-26</span> -->
-        </router-link>
-        <div class='hidden md:flex items-center gap-2'>
-          <router-link to='/projects' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Projects</router-link>
-          <router-link to='/works' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Work</router-link>
-          <router-link to='/about' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>About</router-link>
+    <nav class='w-full flex items-center h-[62px] md:h-[100px] rounded-3xl relative z-10'>
+      <div class='flex justify-between w-[90%] mx-auto'>
+        <div class="flex items-center gap-5">
+          <router-link to="/" class="logo flex items-center gap-3">
+            <img src="/images/special-26.png" alt="special-26" class="w-6 rounded-lg">
+            <span class="text-zinc-100 uppercase">Special-26</span>
+          </router-link>
+          <div class='hidden md:flex items-center gap-2'>
+            <div class='text-zinc-400 rounded px-3 py-1 text-sm group relative'>
+              <button class="flex items-center gap-1">
+                Products <Icon name="material-symbols:keyboard-arrow-down" class="w-4 h-4 group-hover:-rotate-180 transition duration-300 ease-in-out" />
+              </button>
+              <div class="absolute top-0 left-0 pt-10 hidden group-hover:block duration-700 ease-in-out hover:transition-all min-w-[30vw] w-full">
+                <div class="grid grid-cols-2 rounded-lg shadow bg-white w-full overflow-hidden">
+                  <!-- Boltwind -->
+                  <div class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                    <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
+                      B
+                    </button>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm text-gray-900">Boltwind</h3>
+                      <span class="text-[10px]">Generate tailwind background gradients</span>
+                    </div>
+                  </div>
+                  <!-- Tailwind Gradient -->
+                  <div class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                    <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
+                      TG
+                    </button>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm text-gray-900">Tailwind Gradients</h3>
+                      <span class="text-[10px]">Generate tailwind background gradients</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <router-link to='/works' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>Work</router-link>
+            <router-link to='/about' class='text-zinc-400 rounded px-3 py-1 text-sm border-b border-transparent hover:text-zinc-200 hover:border-zinc-400'>About</router-link>
+          </div>
         </div>
         <router-link to='/contact' class="flex items-center text-zinc-200">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -21,10 +51,22 @@
     </nav>
   </template>
   
-  <script lang="ts" setup>
+  <script setup>
   
   </script>
   
-  <style>
-  
+  <style scoped>
+  .slide-up-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .slide-up-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+
+  .slide-up-enter-from,
+  .slide-up-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+  }
   </style>
