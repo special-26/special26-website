@@ -4,6 +4,7 @@
     <MainNavbar />
     
     <slot />
+
   </div>
 </template>
 

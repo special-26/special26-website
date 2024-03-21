@@ -6,33 +6,33 @@
             <img src="/images/special-26.png" alt="special-26" class="w-6 rounded-lg">
             <span class="text-zinc-100 uppercase">Special-26</span>
           </router-link>
-          <div class='hidden md:flex items-center gap-2'>
-            <div class='text-zinc-400 rounded px-3 py-1 text-sm group relative'>
+          <div class='hidden md:flex items-center gap-2 relative'>
+            <div class='text-zinc-400 rounded px-3 py-1 text-sm group'>
               <button class="flex items-center gap-1">
                 Products <Icon name="material-symbols:keyboard-arrow-down" class="w-4 h-4 group-hover:-rotate-180 transition duration-300 ease-in-out" />
               </button>
-              <div class="absolute top-0 left-0 pt-10 hidden group-hover:block duration-700 ease-in-out hover:transition-all min-w-[30vw] w-full">
-                <div class="grid grid-cols-2 rounded-lg shadow bg-white w-full overflow-hidden">
+              <div class="absolute top-0 left-0 pt-10 hidden group-hover:block duration-700 ease-in-out hover:transition-all w-full">
+                <div class="grid grid-cols-2 rounded-lg shadow bg-white overflow-hidden w-[35vw]">
                   <!-- Boltwind -->
-                  <div class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                  <NuxtLink to="/boltwind" target="_blank" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
                     <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
                       B
                     </button>
                     <div class="flex flex-col">
                       <h3 class="text-sm text-gray-900">Boltwind</h3>
-                      <span class="text-[10px]">Generate tailwind background gradients</span>
+                      <span class="text-[10px]">Tailwind Components</span>
                     </div>
-                  </div>
+                  </NuxtLink>
                   <!-- Tailwind Gradient -->
-                  <div class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                  <NuxtLink to="/just-google-font" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
                     <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
-                      TG
+                      GF
                     </button>
                     <div class="flex flex-col">
-                      <h3 class="text-sm text-gray-900">Tailwind Gradients</h3>
-                      <span class="text-[10px]">Generate tailwind background gradients</span>
+                      <h3 class="text-sm text-gray-900">Just Google Font</h3>
+                      <span class="text-[10px]">Better preview for google fonts</span>
                     </div>
-                  </div>
+                  </NuxtLink>
                 </div>
               </div>
             </div>

@@ -135,6 +135,17 @@
             </div>
         </section>
 
+        <!-- Footer -->
+        <footer class='p-4 shadow hidden md:flex md:items-center md:justify-between md:p-6 bg-white dark:bg-zinc-900 w-full border-t dark:border-zinc-800'>
+          <span class='text-sm text-zinc-500 sm:text-center dark:text-zinc-500'>© 2024 <a href='https://special-26.com' class='hover:underline'>Special-26</a>. All Rights Reserved.</span>
+          <div class='flex flex-wrap gap-5 items-center justify-between text-sm text-zinc-500 dark:text-zinc-400'>
+            <div class="w-full flex items-center gap-1 justify-end">
+              <h4 class="text-xs text-zinc-700 dark:text-zinc-400">Inked By :</h4>
+              <img src="/boltwind/charlie.png" alt="user-image" class="w-6 h-6 rounded-full object-cover">
+              <a href="https://twitter.com/vimal_bharti" target="_blank" class="text-xs text-zinc-600 dark:text-zinc-300 hover:underline">Vimal Bharti</a>
+            </div>
+          </div>
+      </footer>
   </div>
 </template>
 
