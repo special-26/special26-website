@@ -100,6 +100,13 @@
   definePageMeta({
     layout: 'boltwind'
   })
+  
+  useHead({
+    title: 'Boltwind - Tailwind UI Components ready to use',
+    meta: [
+      { name: 'description', content: 'Generate and preview tailwind gradient class' }
+    ],
+  })
 </script>
 
 <style>

@@ -4,7 +4,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 h-full">
             <!-- Real-estate-landing-page-1 -->
             <section class="h-full">
-                <NuxtLink to="/works/real-estate-landing-page-1" class="group">
+                <NuxtLink class="group">
                     <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
                         <img src="/projects/realestate-one.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                     </figure>
@@ -28,7 +28,7 @@
 
             <!-- Real-estate-landing-page-2 -->
             <section class="h-full">
-              <NuxtLink to="/works/real-estate-landing-page-1" class="group">
+              <NuxtLink class="group">
                   <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
                       <img src="/projects/realestate-two.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                   </figure>
@@ -52,7 +52,7 @@
 
             <!-- Real-estate-landing-page-3 -->
             <section>
-              <NuxtLink to="/works/real-estate-landing-page-1" class="group">
+              <NuxtLink class="group">
                   <figure class="overflow-hidden h-[60vh] rounded-xl w-full">
                       <img src="/projects/realestate-three.png" alt="" class="rounded-xl w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out cursor-pointer object-top">
                   </figure>

@@ -13,6 +13,26 @@
               </button>
               <div class="absolute top-0 left-0 pt-10 hidden group-hover:block duration-700 ease-in-out hover:transition-all w-full">
                 <div class="grid grid-cols-2 rounded-lg shadow bg-white overflow-hidden w-[35vw]">
+                  <!-- Pinetail -->
+                  <!-- <NuxtLink to="/gradient" target="_blank" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                    <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold p-1">
+                      <img src="/pinetail/logo.png" alt="pinetail-logo" class="w-full h-full" />
+                    </button>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm text-gray-900">PineTail</h3>
+                      <span class="text-[10px]">Better preview for google fonts</span>
+                    </div>
+                  </NuxtLink> -->
+                  <!-- Gradient -->
+                  <NuxtLink to="/gradient" target="_blank" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                    <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
+                      GR
+                    </button>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm text-gray-900">Tailwind Gradients</h3>
+                      <span class="text-[10px]">Better preview for google fonts</span>
+                    </div>
+                  </NuxtLink>
                   <!-- Boltwind -->
                   <NuxtLink to="/boltwind" target="_blank" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
                     <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
@@ -24,7 +44,7 @@
                     </div>
                   </NuxtLink>
                   <!-- Tailwind Gradient -->
-                  <NuxtLink to="/just-google-font" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
+                  <NuxtLink to="/just-google-font" target="_blank" class="flex items-center gap-2 cursor-pointer p-3 hover:bg-teal-50">
                     <button class="w-10 h-10 rounded-lg bg-teal-900 text-white hover:font-bold">
                       GF
                     </button>
