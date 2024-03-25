@@ -629,14 +629,14 @@
     ],
   })
 
+  const config = useRuntimeConfig()
+
   const selectedFont = ref('Acme');
   const isOpen = ref(false)
 
   const changingFontLoading = ref(false)
 
-  const api = ref('AIzaSyD7hKf9Ny9g66yq1emo0bcgXgl4s1aO0mM');
-
-  const { pending, count, data: fonts } = useFetch(`https://www.googleapis.com/webfonts/v1/webfonts?key=${api.value}`, {
+  const { pending, count, data: fonts } = useFetch(`https://www.googleapis.com/webfonts/v1/webfonts?key=${config.public.googleApi}`, {
     lazy: true,
     pick: ['items']
   })
