@@ -2,10 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", 'nuxt-gtag'],
   css: [
     '@/assets/css/main.css',
   ],
+  gtag: {
+    id: 'G-8CW8KG9FFM'
+  },
   app: {
     head: {
       title: 'Special-26',

@@ -3,7 +3,7 @@
     <button class="fixed right-0 top-[20vh] z-30 bg-gradient-to-r from-yellow-400 to-orange-400 text-white h-12 w-12 flex items-center justify-center rounded-l-xl" @click="isOpen = true">
       <Icon name="material-symbols:settings-rounded" class="w-7 h-7" />
     </button>
-    <USlideover v-model="isOpen" :overlay="false">
+    <USlideover v-model="isOpen" :overlay="false" class="h-[50vh] md:h-full">
       <aside class="bg-zinc-950 h-full overflow-y-auto">
         <div v-if="pending">
           <div class="flex items-center justify-center h-full p-20 text-2xl">
@@ -16,6 +16,9 @@
               <h3>Selected Font:</h3>
               <span class="text-yellow-500">{{ selectedFont }}</span>
             </div>
+            <button class="text-white bg-zinc-900 flex items-center justify-center px-2 py-2 rounded-lg" @click="isOpen = false">
+              <Icon name="material-symbols:close" />
+            </button>
           </div>
           <div class="grid grid-cols-3 gap-3 p-3">
             <button 
@@ -37,13 +40,13 @@
       </template>
       <template v-else>
         <div class="min-h-screen h-full bg-white" :style="{ fontFamily: selectedFont }">
-          <div class="navbar pt-3">
+          <div class="navbar pt-4 sm:pt-6 px-4 sm:px-6">
             <nav class="mx-auto flex max-w-7xl items-center justify-between p-3 mb-8 shadow-inner bg-gray-50 rounded-full">
               <div class="logo text-2xl font-bold text-zinc-900 flex items-center gap-1">
                   <img src="/justgooglefont/logo.png" alt="just-google-font" class="w-12 ">
                 JustGoogleFont
               </div>
-              <div class="flex items-center gap-8 text-sm text-zinc-900">
+              <div class="hidden md:flex items-center gap-8 text-sm text-zinc-900">
                 <a href="#">Features</a>
                 <a href="#">Services</a>
                 <a href="#">Blogs</a>
@@ -63,7 +66,7 @@
             <img src="/justgooglefont/numb_2.jpg" alt="letter-j" class="absolute right-[10%] top-[15%] opacity-5 w-[10%]">
             <img src="/justgooglefont/numb_6.jpg" alt="letter-j" class="absolute right-20 top-[40%] opacity-5 w-[10%]">
 
-            <div class="mx-auto max-w-7xl flex flex-col md:flex-row items-center h-full">
+            <div class="mx-auto max-w-7xl flex flex-col md:flex-row items-center h-full px-4 sm:px-6">
               <div class="flex h-full md:w-[50%] flex-col justify-center">
                 <h2 class="mb-4 text-[2em] md:text-[4em] font-bold text-zinc-900">Let's build the future of design, <span class="text-yellow-500">together</span></h2>
                 <p class="mb-8 md:text-xl text-gray-700">With JustGoogleFont, you can elevate your website with the perfect font selection from Google's vast library of fonts.</p>
@@ -80,7 +83,7 @@
 
           <section class="border-y py-12">
             <!-- Features -->
-            <div class="mx-auto max-w-7xl">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6">
               <!-- Grid -->
               <div class="mt-5 grid gap-8 lg:mt-16 lg:grid-cols-3 lg:gap-12">
                 <div class="lg:col-span-1">
